@@ -1,12 +1,11 @@
 import { WebSocketServer } from "ws"
+import { GameManager } from "./GameManager.js"
 
 const wss = new WebSocketServer({port: 8080})
 
-wss.on('connection', (ws)=>{
-    ws.on('error', console.error)
+const gameManager = new GameManager();
 
-    ws.on("message",(data)=> {
-        console.log('recived %s',data);
-    })
-    ws.send("something");
+wss.on('connection', (ws)=>{
+    gameManager.addUser(ws);
+    
 })
