@@ -1,0 +1,38 @@
+# Node.js
+node_modules/
+dist/
+build/
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids
+*.pid
+*.seed
+*.log
+
+# TypeScript
+*.tsbuildinfo
+*.js.map
+*.d.ts.map
+# If you are compiling TS to JS in the same directory, you may want to ignore the compiled JS files
+# For example, if you have 'src/index.ts' and it compiles to 'src/index.js'
+# src/**/*.js
+# src/**/*.d.ts
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# Misc
+.nyc_output/
