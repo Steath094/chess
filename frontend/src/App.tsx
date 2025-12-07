@@ -5,7 +5,7 @@ import Game from './screens/Game'
 function App() {
 
   return (
-    <>
+    <div className='bg-[#743a30] h-screen'>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Landing/>}/>
@@ -13,7 +13,7 @@ function App() {
         </Routes>
 
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 
