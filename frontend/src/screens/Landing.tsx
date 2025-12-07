@@ -1,10 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import { Button } from "../components/Button";
 
 export const Landing = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="p-4 flex gap-4 bg-[#743a30] h-screen">
+      <div className="p-4 flex gap-4 ">
         <div className="flex-1 w-1/2 rounded-3xl">
           <img
             className="w-full rounded-3xl"
@@ -27,15 +28,14 @@ export const Landing = () => {
             </div>
           </div>
           <div>
-            <button
+            <Button
               onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
                 e.preventDefault();
                 navigate("/game");
               }}
-              className="p-6 bg-[#dab175] text-[#6c1304] rounded-xl text-3xl font-sans font-semibold hover:outline-1 hover:bg-[#6c1304] hover:text-[#dab175]"
             >
               Play Online
-            </button>
+            </Button>
           </div>
         </div>
       </div>
